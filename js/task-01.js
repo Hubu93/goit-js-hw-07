@@ -1,12 +1,12 @@
- const categoriess = document.querySelectorAll("#categories .item");
- console.log(categoriess);
-console.log(`В списке ${categoriess.length}  категории`);
+const categories = document.querySelectorAll("#categories .item");
+console.log(categories);
+console.log(`В списке ${categories.length} категории`);
 
-categoriess.forEach(item => {
-    const h2 = item.querySelector("h2");
+categories.forEach(item => {
+  const h2 = item.querySelector("h2");
 
-    const h2Text = h2.innerText;
-    const li = item.querySelectorAll("li");
+  const h2Text = h2.innerText;
+  const li = item.querySelectorAll("li");
 
-    console.log(`${h2Text}: ${li.length}`);
+  console.log(`${h2Text}: ${li.length}`);
 });
